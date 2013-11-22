@@ -25,7 +25,10 @@ a {
     transition:color .6s ease-out;
 }
 
-a:hover { color: #FF0099; }
+a:hover {
+    color: #FF0099;
+    text-decoration: none;
+}
 
 .letter {
     margin-top: 15px;
@@ -41,9 +44,17 @@ a:hover { color: #FF0099; }
 .intro {
     padding: 0;
     position: relative;
+    top: -15px;
     opacity: 0.01;
 }
 
 .letterright {
     text-align: right;
+}
+
+::selection {
+	background: #FF0099; /* Safari */
+	}
+::-moz-selection {
+	background: #FF0099; /* Firefox */
 }
