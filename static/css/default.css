@@ -1,0 +1,48 @@
+body {
+    margin-top: 150px;
+    background-image: url('/img/squairy_light.png');
+    font-size: 18px;
+    font-family: 'Open sans';
+}
+
+.moo {
+    margin-bottom: 25px;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+a {
+    color: #3399CC; 
+    -o-transition:color .6s ease-out;
+    -ms-transition:color .6s ease-out;
+    -moz-transition:color .6s ease-out;
+    -webkit-transition:color .6s ease-out;
+    /* ...and now override with proper CSS property */
+    transition:color .6s ease-out;
+}
+
+a:hover { color: #FF0099; }
+
+.letter {
+    margin-top: 15px;
+}
+
+.container {
+   height: 200px;
+    max-height: 200px;
+    min-height: 200px; 
+}
+.intro {
+    position: relative;
+    top: -20px;
+    
+    opacity: 0;
+}
+
+.letterright {
+    text-align: right;
+}
