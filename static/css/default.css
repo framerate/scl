@@ -31,16 +31,15 @@ a:hover { color: #FF0099; }
     margin-top: 15px;
 }
 
+.contact {
+    margin-top: 20px;
+}
+
 .container {
-   height: 201px;
-   max-height: 200px;
-   min-height: 200px; 
+    max-width: 600px;
 }
 .intro {
     padding: 0;
-    height: 200px;
-    max-height: 200px;
-    min-height: 200px; 
     position: relative;
     opacity: 0.01;
 }
