@@ -32,15 +32,17 @@ a:hover { color: #FF0099; }
 }
 
 .container {
-   height: 200px;
-    max-height: 200px;
-    min-height: 200px; 
+   height: 201px;
+   max-height: 200px;
+   min-height: 200px; 
 }
 .intro {
+    padding: 0;
+    height: 200px;
+    max-height: 200px;
+    min-height: 200px; 
     position: relative;
-    top: -20px;
-    
-    opacity: 0;
+    opacity: 0.01;
 }
 
 .letterright {
