@@ -44,8 +44,8 @@ a:hover {
 .intro {
     padding: 0;
     position: relative;
-    top: -15px;
-    opacity: 0.01;
+    top: -10px;
+    opacity: 0.09;
 }
 
 .letterright {
