@@ -1,5 +1,5 @@
 body {
-    margin-top: 150px;
+    margin-top: 8%;
     background-image: url('/img/squairy_light.png');
     font-size: 18px;
     font-family: 'Open sans';
@@ -25,10 +25,12 @@ a {
     transition:color .6s ease-out;
 }
 
-a:hover {
+a:hover, l.social  li a:hover {
     color: #FF0099;
     text-decoration: none;
 }
+
+
 
 .letter {
     margin-top: 15px;
@@ -58,3 +60,26 @@ a:hover {
 ::-moz-selection {
 	background: #FF0099; /* Firefox */
 }
+
+ul.social {
+    margin-top: 30px;
+}
+ul.social  li {
+    margin-right: 10px;
+}
+
+ul.social  li a {
+    color: #333;
+    -o-transition:color .6s ease-out;
+    -ms-transition:color .6s ease-out;
+    -moz-transition:color .6s ease-out;
+    -webkit-transition:color .6s ease-out;
+    /* ...and now override with proper CSS property */
+    transition:color .6s ease-out;
+}
+
+ul.social  li a:hover {
+    color: #FF0099;
+    text-decoration: none;
+}
+
