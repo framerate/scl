@@ -1,12 +1,15 @@
 'use strict';
 
 var express = require('express');
+var path = require('path');
 
 var app = express();
 
-app.set('views', 'views');
+app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
-app.use(express.static('static'));
+app.use(serveStatic(path.join(__dirname, '/static'), {
+    'index': false
+}));
 
 require('./lib/routes')(app);
 
