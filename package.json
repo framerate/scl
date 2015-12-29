@@ -1,25 +1,40 @@
 {
-  "name": "secretcowlevel",
-  "description": "secretcowlevel.com",
-  "author": "justin@secretcowlevel.com",
-  "private": "true",
-  "dependencies": {
-    "newrelic": "~1.1.0",
-    "express": "~3.4.4",
-    "ejs": "~0.8.4"
-  },
-  "scripts": {
-    "start": "sudo start sclweb",
-    "stop": "sudo stop sclweb"
-  },
+  "name": "scl-server",
   "version": "0.0.1",
+  "description": "Server for SCL Projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "clean": "rm -rf node_modules/ && npm i && npm start",
+    "lint": "./node_modules/eslint/bin/eslint.js -c ./.eslintrc --ext .jsx --ext .js ./index.js ./lib/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/framerate/scl-server.git"
+  },
+  "author": "justin@secretcowlevel.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/framerate/scl-server/issues"
+  },
+  "homepage": "https://github.com/framerate/scl-server#readme",
+  "dependencies": {
+    "good": "^6.4.0",
+    "good-console": "^5.2.0",
+    "good-loggly": "^2.0.0",
+    "handlebars": "^4.0.5",
+    "hapi": "^11.1.4",
+    "inert": "^3.2.0",
+    "mongoose": "^4.3.4",
+    "underscore": "^1.8.3",
+    "vision": "^4.0.1"
+  },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-watch": "~0.4.4",
-    "grunt-nodemon": "~0.1.1",
-    "grunt-contrib-jshint": "~0.7.1",
-    "grunt-concurrent": "~0.4.1",
-    "grunt-notify": "~0.2.16"
+    "babel-core": "^6.3.26",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
+    "nodemon": "^1.8.1"
   }
 }

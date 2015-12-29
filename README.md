@@ -1,1 +1,2 @@
-This is a template for new node.js express3 based web projects.
+# scl-server
+Generic API Server for SCL Projects
